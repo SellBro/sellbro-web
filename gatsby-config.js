@@ -1,8 +1,10 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: `Sellbro`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Sellbro company`,
+    author: `@youngrake`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,6 +27,17 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/sellbro-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          components: path.resolve(__dirname, 'src/components'),
+          images: path.resolve(__dirname, 'src/images'),
+          styles: path.resolve(__dirname, 'src/styles'),
+          data: path.resolve(__dirname, 'src/data'),
+        },
       },
     },
     `gatsby-plugin-styled-components`,

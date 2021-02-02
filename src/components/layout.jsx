@@ -4,9 +4,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
 
-import GlobalStyles from '../styles/GlobalStyles';
-import Normalize from '../styles/Normalize';
-
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -20,8 +17,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Normalize />
-      <GlobalStyles />
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
         <main>{children}</main>
