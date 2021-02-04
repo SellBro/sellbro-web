@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
+import 'fonts/Comfortaa/stylesheet.css';
+import comfortaa from 'fonts/Comfortaa/Comfortaa-Regular.woff2';
+
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -61,8 +64,9 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
-    />
+      ].concat(meta)}>
+      <link rel="preload" as="font" href={comfortaa} type="font/woff2" crossOrigin="anonymous" />
+    </Helmet>
   );
 }
 

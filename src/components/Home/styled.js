@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { assets, colors } from 'utils/styles';
+
 export const TitleContainer = styled.div`
   display: block;
   position: absolute;
@@ -20,7 +22,7 @@ export const Title = styled.h1`
   width: 591px;
   height: 0;
   padding-top: 150px;
-  background-image: ${({ theme }) => `url(${theme.assets.titleImg})`};
+  background-image: ${`url(${assets.titleImg})`};
 `;
 
 export const Info = styled.h2`
@@ -39,12 +41,12 @@ export const Foreground = styled.div`
   pointer-events: none;
   overflow: hidden;
   height: 100%;
-  background-image: ${({ theme }) => `url(${theme.assets.foregroundImg})`};
+  background-image: ${`url(${assets.foregroundImg})`};
   background-size: cover;
 `;
 
 export const Background = styled.div`
-  background-image: ${({ theme }) => `url(${theme.assets.backgroundImg})`};
+  background-image: ${`url(${assets.backgroundImg})`};
   background-position: center 0;
   width: 100%;
   min-width: 720px;
@@ -57,9 +59,8 @@ export const Background = styled.div`
 
 export const Content = styled.div`
   position: absolute;
-  min-width: 720px;
   width: 100%;
   top: 710px;
-  color: ${({ theme }) => theme.colors.textPrimary};
-  background-color: ${({ theme }) => theme.colors.contentBackground};
+  color: ${colors.textPrimary};
+  background-color: ${colors.contentBackground};
 `;

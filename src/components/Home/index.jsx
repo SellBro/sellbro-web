@@ -1,9 +1,8 @@
 import React from 'react';
-import { withTheme } from 'styled-components';
 
 import { strings } from 'data';
 
-import { Convex, Section } from 'components/Dividers';
+import { TeamSection } from 'components';
 
 import * as S from './styled';
 
@@ -57,19 +56,13 @@ class Home extends React.Component {
         </S.TitleContainer>
         <S.Foreground />
         <S.Content>
-          <h1>Pepega</h1>
-          <h1>Pepega</h1>
-          <h1>Pepega</h1>
-          <h1>Pepega</h1>
-          <h1>Pepega</h1>
-          <Convex />
-          <Section>Contacts</Section>
-          <h1>Pepega</h1>
-          <h1>Pepega</h1>
+          {strings.team.map((section, i) => (
+            <TeamSection {...section} key={i} />
+          ))}
         </S.Content>
       </>
     );
   }
 }
 
-export default withTheme(Home);
+export default Home;

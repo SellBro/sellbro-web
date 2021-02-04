@@ -6,8 +6,9 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
 
-    #root , html, body {
+    #root , html, body, main {
         margin: 0;
+        
     }
 
     ul, li, ol, dd, h1, h2,
@@ -24,6 +25,6 @@ export default createGlobalStyle`
         &:disabled {
             opacity: 1;
         }
-  }
+    }
 
 `;

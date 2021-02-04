@@ -12,10 +12,6 @@ export const colors = {
   textSecondary: '#dc7016',
 };
 
-export const font = {
-  size: size => `font-size: ${size}px`,
-};
-
 export const assets = {
   backgroundImg,
   foregroundImg,

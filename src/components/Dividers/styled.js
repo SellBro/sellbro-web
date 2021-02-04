@@ -1,18 +1,20 @@
 import styled from 'styled-components';
 
+import { colors } from 'utils/styles';
+
 export const DividerContainer = styled.div`
-  background: ${({ theme }) => theme.colors.contentBackground};
+  background: ${colors.dividerBackground};
 `;
 
 export const DividerWrapper = styled.div`
   height: 200px;
-  background: ${({ theme }) => theme.colors.dividerBackground};
+  background: ${colors.dividerBackground};
   clip-path: polygon(0% 0%, 0% 20%, 50% 100%, 100% 20%, 100% 0%);
 `;
 
 export const DividerPolygon = styled.div`
   height: 100%;
-  background: ${({ theme }) => theme.colors.contentBackground};
+  background: ${colors.contentBackground};
   clip-path: polygon(0% 0%, 50% 80%, 100% 0%);
 `;
 
@@ -28,6 +30,6 @@ export const SectionContainer = styled.div`
 `;
 
 export const SectionHeading = styled.h2`
-  color: ${({ theme }) => theme.colors.textSecondary};
-  ${({ theme }) => theme.font.size(40)};
+  color: ${colors.textSecondary};
+  font-size: 40px;
 `;
