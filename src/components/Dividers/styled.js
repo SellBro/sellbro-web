@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { colors } from 'utils/styles';
 
 export const DividerContainer = styled.div`
-  background: ${colors.dividerBackground};
+  background: ${colors.contentBackground};
 `;
 
 export const DividerWrapper = styled.div`

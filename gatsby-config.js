@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Sellbro`,
     description: `Sellbro company`,
-    author: `@youngrake`,
+    author: 'youngrake',
   },
   plugins: [
     `gatsby-plugin-preload-fonts`,
@@ -12,6 +12,29 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.svg$/,
+        },
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'fonts',
+        path: `${__dirname}/src/fonts/`,
+      },
+    },
     {
       resolve: 'gatsby-plugin-resolve-src',
       options: {
@@ -24,19 +47,7 @@ module.exports = {
         data: path.resolve(__dirname, 'src/data'),
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
 
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'fonts',
-        path: `${__dirname}/src/fonts/`,
-      },
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
