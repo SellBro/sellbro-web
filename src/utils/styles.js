@@ -1,5 +1,8 @@
-import backgroundImg from 'images/background.jpg';
+import backgroundImg from 'images/background.png';
 import foregroundImg from 'images/foreground.png';
+import layer1Img from 'images/layer1.png';
+import layer2Img from 'images/layer2.png';
+import layer3Img from 'images/layer3.png';
 import sellbroIconImg from 'images/sellbro-icon.png';
 import titleImg from 'images/title.png';
 import userImg from 'images/user.png';
@@ -20,6 +23,9 @@ export const colors = {
 export const assets = {
   backgroundImg,
   foregroundImg,
+  layer1Img,
+  layer2Img,
+  layer3Img,
   githubImg,
   sellbroIconImg,
   titleImg,

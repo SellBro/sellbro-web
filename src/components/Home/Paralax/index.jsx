@@ -20,42 +20,34 @@ class Paralax extends React.Component {
   }
 
   moveParalax = () => {
-    const offset1 = this.scrollPosition * 0.7;
-    const offset2 = this.scrollPosition * 0.5;
-
-    const layer1 = document.getElementById('background');
-    const layer2 = document.getElementById('title');
-
-    layer1.style.webkitTransform = `translate3d(0, ${offset1}px, 0)`;
-    layer1.style.MozTransform = `translate3d(0, ${offset1}px, 0)`;
-    layer1.style.msTransform = `translateY(${offset1}px)`;
-    layer1.style.OTransform = `translate3d(0, ${offset1}px, 0)`;
-    layer1.style.transform = `translate3d(0, ${offset1}px, 0)`;
-
-    layer2.style.webkitTransform = `translate3d(0, ${offset2}px, 0)`;
-    layer2.style.MozTransform = `translate3d(0, ${offset2}px, 0)`;
-    layer2.style.msTransform = `translateY(${offset2}px)`;
-    layer2.style.OTransform = `translate3d(0, ${offset2}px, 0)`;
-    layer2.style.transform = `translate3d(0, ${offset2}px, 0)`;
+    const layers = document.getElementsByClassName('paralax');
+    for (let i = 0; i < layers.length; i += 1) {
+      const speed = layers[i].getAttribute('data-scale');
+      const yOffset = -(this.scrollPosition * speed) / 100;
+      layers[i].style.transform = `translate3d(0, ${yOffset}px, 0)`;
+    }
   };
 
   handleScroll = () => {
-    this.scrollPosition = Math.max(window.pageYOffset, 0);
+    this.scrollPosition = window.pageYOffset;
     this.moveParalax();
   };
 
   render() {
     const { children } = this.props;
     return (
-      <>
-        <S.Background id="background" />
-        <S.TitleContainer id="title">
+      <S.ParalaxRoot>
+        <S.Background id="background" className="paralax" data-scale="4" />
+        <S.Layer1 id="layer1" className="paralax" data-scale="10" />
+        <S.Layer2 id="layer2" className="paralax" data-scale="15" />
+        <S.Layer3 id="layer3" className="paralax" data-scale="20" />
+        <S.TitleContainer id="title" className="paralax" data-scale="-60">
           <S.Title />
           <S.Info>{strings.title.heading2}</S.Info>
         </S.TitleContainer>
-        <S.Foreground />
+        <S.Foreground id="foreground" className="paralax" data-scale="0" />
         <S.Content>{children}</S.Content>
-      </>
+      </S.ParalaxRoot>
     );
   }
 }
