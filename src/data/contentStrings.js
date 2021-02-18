@@ -4,69 +4,45 @@ export const title = {
   heading2: 'Games and more',
 };
 
-export const team = [
-  {
-    header: 'Leadership',
-    mates: [
-      {
-        name: 'Surzhenko Viacheslav',
-        rank: 'Founder & CEO',
-        image: assets.userImg,
-        description:
-          'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ',
-      },
-      {
-        name: 'Surzhenko Viacheslav',
-        rank: 'Founder & CEO',
-        image: assets.userImg,
-        description:
-          'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ',
-      },
-      {
-        name: 'Surzhenko Viacheslav',
-        rank: 'Founder & CEO',
-        image: assets.userImg,
-        description:
-          'Curses lie as a part of our world, sometimes just as benign as a harmless trick from a wrongedfairy, turning the milk sour. ',
-      },
-    ],
-  },
-  {
-    header: 'Team',
-    mates: [
-      {
-        name: 'Surzhenko Viacheslav',
-        rank: 'Founder & CEO',
-        image: assets.userImg,
-        description:
-          'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ',
-      },
-      {
-        name: 'Surzhenko Viacheslav',
-        rank: 'Founder & CEO',
-        image: assets.userImg,
-        description:
-          'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ',
-      },
-      {
-        name: 'Surzhenko Viacheslav',
-        rank: 'Founder & CEO',
-        image: assets.userImg,
-        description:
-          'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ',
-      },
-    ],
-  },
-];
+export const team = {
+  header: 'Our company',
+  heading1: 'Leadership',
+  mates: [
+    {
+      name: 'Surzhenko Viacheslav',
+      rank: 'Founder & CEO',
+      image: assets.slavaImg,
+      description:
+        'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ',
+    },
+    {
+      name: 'Max Kuchynskyj',
+      rank: 'Fullstack developer',
+      image: assets.maxImg,
+      description:
+        'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ',
+    },
+    {
+      name: 'Valentine Balaban',
+      rank: 'Creative director',
+      image: assets.asarImg,
+      description:
+        'Curses lie as a part of our world, sometimes just as benign as a harmless trick from a wrongedfairy, turning the milk sour. ',
+    },
+  ],
+};
 
 export const about = {
   header: 'About Us',
   heading1: 'Panem at ipsum',
   description:
-    'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ',
+    'Kурс потребує базових знань курсів «Основи дискретної математики» та «Основи комп’ютерних алгоритмів». Наступні курси: всі курси, пов’язані з програмуванням, а також курс системи кодування інформації',
+  image: assets.joyStickImg,
 };
 
 export const contacts = {
+  header: 'Contact us',
+  heading2: "Let's get talking",
   form: {
     initialValues: {
       name: '',

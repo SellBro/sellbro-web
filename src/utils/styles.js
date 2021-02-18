@@ -7,6 +7,11 @@ import sellbroIconImg from 'images/sellbro-icon.png';
 import titleImg from 'images/title.png';
 import userImg from 'images/user.png';
 import githubImg from 'images/github-icon.png';
+import joyStickImg from 'images/joystick.png';
+
+import slavaImg from 'images/slava.png';
+import maxImg from 'images/max.png';
+import asarImg from 'images/asar.png';
 
 import userSvg from 'images/svg/user-icon.svg';
 import mailSvg from 'images/svg/mail-icon.svg';
@@ -27,9 +32,14 @@ export const assets = {
   layer2Img,
   layer3Img,
   githubImg,
+  joyStickImg,
   sellbroIconImg,
   titleImg,
   userImg,
+
+  asarImg,
+  maxImg,
+  slavaImg,
 
   mailSvg,
   messageSvg,

@@ -14,10 +14,10 @@ export const TeamContainer = styled.div`
   margin-bottom: 50px;
 `;
 
-export const TeamHeader = styled.h3`
+export const TeamHeading = styled.h3`
   font-family: Comfortaa;
   font-size: 48px;
-
+  margin: 0px 171px;
   position: relative;
   padding-bottom: 40px;
   color: ${colors.textPrimary};
@@ -26,8 +26,7 @@ export const TeamHeader = styled.h3`
 export const TeamCardsContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-
+  margin: 0px 141px;
   z-index: 1;
 `;
 

@@ -14,7 +14,7 @@ export const CardContainer = styled.div`
 
 export const ImageContainer = styled.div`
   background-color: grey;
-  width: 300px;
+  width: 325px;
   height: 440px;
 `;
 
@@ -36,6 +36,7 @@ export const DescriptionTitle = styled.h3`
 `;
 
 export const DescriptionRank = styled.h3`
+  font-size: 24px;
   margin-top: 5px;
   color: ${colors.textSecondary};
 `;

@@ -1,17 +1,15 @@
 import React from 'react';
 
-import { strings } from 'data';
-
-import { TeamSection, ContactsSection, Convex } from 'components';
+import { ContactsSection, Convex, AboutSection, TeamSection } from 'components';
 
 import Paralax from './Paralax';
 
 const Home = () => {
   return (
     <Paralax>
-      {strings.team.map((section, i) => (
-        <TeamSection {...section} key={i} />
-      ))}
+      <AboutSection />
+      <Convex />
+      <TeamSection />
       <Convex />
       <ContactsSection />
     </Paralax>

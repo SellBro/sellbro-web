@@ -33,3 +33,21 @@ export const SectionHeading = styled.h2`
   color: ${colors.textSecondary};
   font-size: 40px;
 `;
+
+export const SectionHeaderRoot = styled.div`
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+`;
+
+export const SectionHeaderText = styled.h2`
+  margin-left: 171px;
+  font-family: Comfortaa;
+  font-size: 32px;
+  color: ${colors.textSecondary};
+`;

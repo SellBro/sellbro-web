@@ -1,16 +1,20 @@
 import React from 'react';
+import { strings } from 'data';
+
+import { SectionHeader } from 'components';
 
 import TeamMateCard from './MateCard';
 
-import { TeamCardsContainer, TeamContainer, TeamHeader, TeamRoot } from './styled';
+import { TeamCardsContainer, TeamContainer, TeamHeading, TeamRoot } from './styled';
 
-const TeamSection = ({ ...section }) => {
+const TeamSection = () => {
   return (
     <TeamRoot>
+      <SectionHeader>{strings.team.header}</SectionHeader>
       <TeamContainer>
-        <TeamHeader>{section.header}</TeamHeader>
+        <TeamHeading>{strings.team.heading1}</TeamHeading>
         <TeamCardsContainer>
-          {section.mates.map((item, i) => (
+          {strings.team.mates.map((item, i) => (
             <TeamMateCard {...item} key={i} />
           ))}
         </TeamCardsContainer>

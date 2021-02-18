@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { strings } from 'data';
+import { SectionHeader } from 'components';
+
 import ContactsForm from './ContactsForm';
 import ContactsInfo from './ContactsInfo';
 
@@ -9,7 +12,8 @@ const ContactsSection = () => {
   return (
     <S.ContactsRoot>
       <S.ContactsContainer>
-        <S.ContactsHeading>Contacts</S.ContactsHeading>
+        <SectionHeader>{strings.contacts.header}</SectionHeader>
+        <S.ContactsHeading>{strings.contacts.heading2}</S.ContactsHeading>
         <S.ContactsRowContainer>
           <ContactsForm />
           <ContactsInfo />
