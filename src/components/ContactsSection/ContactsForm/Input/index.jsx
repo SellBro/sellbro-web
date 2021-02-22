@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Icon from './Icon';
 
@@ -10,12 +11,17 @@ const TextInput = ({ label, type, icon, ...props }) => {
       <S.InputContainer>
         <Icon icon={icon} />
         <S.InputColumn>
-          {/* <S.InputTitle>{label}</S.InputTitle> */}
           {type === 'textarea' ? <S.TextArea rows={4} {...props} /> : <S.Input {...props} />}
         </S.InputColumn>
       </S.InputContainer>
     </S.InputRoot>
   );
+};
+
+TextInput.propTypes = {
+  label: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
 };
 
 export default TextInput;

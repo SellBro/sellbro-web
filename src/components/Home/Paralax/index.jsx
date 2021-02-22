@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { strings } from 'data';
 
@@ -51,5 +52,9 @@ class Paralax extends React.Component {
     );
   }
 }
+
+Paralax.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Paralax;
