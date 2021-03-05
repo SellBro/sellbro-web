@@ -21,7 +21,7 @@ const TextInput = ({ label, type, icon, ...props }) => {
 TextInput.propTypes = {
   label: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.func.isRequired,
 };
 
 export default TextInput;
