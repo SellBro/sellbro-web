@@ -6,4 +6,4 @@ export { default as AboutSection } from './AboutSection';
 export { default as TeamSection } from './TeamSection';
 export { default as ContactsSection } from './ContactsSection';
 export { default as SocialLink } from './SocialLink';
-export { Section, Convex, SectionHeader } from './Dividers';
+export { Convex, SectionHeader } from './Dividers';
