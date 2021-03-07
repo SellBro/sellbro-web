@@ -2,9 +2,9 @@ import React from 'react';
 
 import * as S from './styled';
 
-const Button = () => {
+const Button = ({ onSubmit }) => {
   return (
-    <S.ButtonRoot>
+    <S.ButtonRoot onClick={onSubmit}>
       <S.Button>Send Message</S.Button>
     </S.ButtonRoot>
   );
