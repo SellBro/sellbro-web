@@ -105,3 +105,8 @@ export const contacts = {
     ],
   },
 };
+
+export const validations = {
+  required: 'Required field',
+  invalidEmail: 'Invalid email',
+};

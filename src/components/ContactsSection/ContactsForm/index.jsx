@@ -9,10 +9,12 @@ import Button from './Button';
 
 import * as S from './styled';
 
+const { validations } = strings;
+
 const validationSchema = Yup.object().shape({
-  name: Yup.string().required('Required'),
-  email: Yup.string().email('Invalid Email').required('Required'),
-  message: Yup.string().required('Required'),
+  name: Yup.string().required(validations.required),
+  email: Yup.string().email(validations.invalidEmail).required(validations.required),
+  message: Yup.string().required(validations.required),
 });
 
 const ContactsForm = () => {

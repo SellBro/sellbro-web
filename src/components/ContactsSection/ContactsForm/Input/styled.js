@@ -55,3 +55,8 @@ export const TextArea = styled.textarea`
   resize: none;
   margin-bottom: 15px;
 `;
+
+export const ErrorLabel = styled.span`
+  font-size: 16px;
+  color: ${colors.textError};
+`;

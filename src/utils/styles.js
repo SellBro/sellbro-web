@@ -23,6 +23,7 @@ export const colors = {
 
   textPrimary: '#fafafa',
   textSecondary: '#dc7016',
+  textError: '#fd5c44',
 };
 
 export const assets = {
