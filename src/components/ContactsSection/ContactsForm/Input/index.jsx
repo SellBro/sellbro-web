@@ -9,23 +9,24 @@ import * as S from './styled';
 const TextInput = ({ label, icon, type, ...props }) => {
   const [field, meta] = useField(props);
 
-  const showError = meta.touched && meta.error;
+  const hasError = meta.touched && meta.error;
 
   return (
     <>
-      <S.InputRoot isTextArea={type === 'textarea'}>
+      <S.InputRoot hasError={hasError} isTextArea={type === 'textarea'}>
         <S.InputContainer>
           <Icon icon={icon} />
-          <S.InputColumn>
+          <S.InputColumn isTextArea={type === 'textarea'} hasLabel={field.value}>
+            {field.value && <S.Label>{field.name}</S.Label>}
             {type === 'textarea' ? (
-              <S.TextArea rows={4} {...field} {...props} />
+              <S.TextArea notEmpty={field.value} {...field} {...props} />
             ) : (
               <S.Input {...field} {...props} />
             )}
           </S.InputColumn>
         </S.InputContainer>
       </S.InputRoot>
-      {showError && <S.ErrorLabel>{meta.error}</S.ErrorLabel>}
+      {hasError && <S.ErrorLabel>{meta.error}</S.ErrorLabel>}
     </>
   );
 };

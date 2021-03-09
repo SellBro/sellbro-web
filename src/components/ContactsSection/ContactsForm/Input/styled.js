@@ -8,6 +8,7 @@ export const InputRoot = styled.div`
   background-color: ${colors.dividerBackground};
   min-height: 60px;
   ${props => props.isTextArea && `min-height: 200px;`}
+  ${props => props.hasError && `outline: ${colors.textError} solid 1px;`}
 `;
 
 export const InputContainer = styled.div`
@@ -24,6 +25,21 @@ export const InputColumn = styled.div`
   flex-grow: 1;
   padding-right: 15px;
   ${props => props.isTextArea && `height: 200px;`}
+
+  ${props =>
+    props.hasLabel &&
+    `
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}`}
+`;
+
+export const Label = styled.div`
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  text-transform: capitalize;
+  color: ${colors.textSecondary};
 `;
 
 export const Input = styled.input`
@@ -54,6 +70,14 @@ export const TextArea = styled.textarea`
   border: none;
   resize: none;
   margin-bottom: 15px;
+
+  ${props =>
+    props.notEmpty &&
+    `
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-top: 4px !important;`}
 `;
 
 export const ErrorLabel = styled.span`
