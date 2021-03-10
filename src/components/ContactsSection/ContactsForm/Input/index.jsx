@@ -33,8 +33,12 @@ const TextInput = ({ label, icon, type, ...props }) => {
 
 TextInput.propTypes = {
   label: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
+  type: PropTypes.oneOf(['textarea', 'text']),
   icon: PropTypes.func.isRequired,
+};
+
+TextInput.defaultProps = {
+  type: 'text',
 };
 
 export default TextInput;
