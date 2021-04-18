@@ -13,30 +13,30 @@ export const team = {
       rank: 'Founder & CEO',
       image: assets.slavaImg,
       description:
-        'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ',
+        'SellBro CEO and Founder. The last one from "Original 3". Currently is a game developer and responsible for studio\'s Game Department.',
     },
     {
       name: 'Max Kuchynskyj',
       rank: 'Fullstack developer',
       image: assets.maxImg,
       description:
-        'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ',
+        'A young and perspective member of SellBro Studio. Our Fullstack star and a React lover. Head of Web Department.',
     },
     {
       name: 'Valentine Balaban',
       rank: 'Creative director',
       image: assets.asarImg,
       description:
-        'Curses lie as a part of our world, sometimes just as benign as a harmless trick from a wrongedfairy, turning the milk sour. ',
+        'Valentine is a capable but a bit lazy creative director partially responsible for studio\'s logo and current studio\'s state.',
     },
   ],
 };
 
 export const about = {
   header: 'About Us',
-  heading1: 'Panem at ipsum',
+  heading1: 'SellBro Studio',
   description:
-    'Kурс потребує базових знань курсів «Основи дискретної математики» та «Основи комп’ютерних алгоритмів». Наступні курси: всі курси, пов’язані з програмуванням, а також курс системи кодування інформації',
+    'SellBro is a small yet progressive dev studio founded in Ukraine. Originally named "SellBro Game Studios" and had 3 members in it. Surzhenko "SVell" Viacheslav, Ostap "OffBro" Nezenskiy and Vlad "Yell" Lukashenko. Years passed and from the original founders only SVell continued working on different game titles and technologies. In Year 2020 SellBro gained a new blood Maxim "YoungRake" Kuchynskyj - a talented frontend developer who is working on Front- and Backends of our projects. The studio was renamed to "SellBro Studio" and it is looking forward for new challenges and projects.',
   image: assets.joyStickImg,
 };
 
@@ -93,7 +93,7 @@ export const contacts = {
         },
         {
           country: 'Ukraine',
-          phone: '8-322-228-35-35',
+          phone: '+380-95-130-94-88',
         },
       ],
     },
