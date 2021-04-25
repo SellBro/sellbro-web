@@ -15,6 +15,16 @@ export const team = {
       image: assets.slavaImg,
       description:
         'SellBro CEO and Founder. The last one from "Original 3". Currently is a game developer and responsible for studio\'s Game Department.',
+      links: [
+        {
+          to: 'https://www.linkedin.com/in/viacheslav-surzhenko-b82b851a8/',
+          icon: assets.linkedinImg,
+        },
+        {
+          to: 'https://github.com/SVell',
+          icon: assets.githubImg,
+        },
+      ],
     },
     {
       firstname: 'Max',
@@ -23,6 +33,16 @@ export const team = {
       image: assets.maxImg,
       description:
         'A young and perspective member of SellBro Studio. Our Fullstack star and a React lover. Head of Web Department.',
+      links: [
+        {
+          to: 'https://www.linkedin.com/in/max-kuchynskyj-9639981a4/',
+          icon: assets.linkedinImg,
+        },
+        {
+          to: 'https://github.com/youngrake',
+          icon: assets.githubImg,
+        },
+      ],
     },
     {
       firstname: 'Valentine',
@@ -31,6 +51,12 @@ export const team = {
       image: assets.asarImg,
       description:
         "Valentine is a capable but a bit lazy creative director partially responsible for studio's logo and current studio's state.",
+      links: [
+        {
+          to: 'https://github.com/SellBro',
+          icon: assets.githubImg,
+        },
+      ],
     },
   ],
 };

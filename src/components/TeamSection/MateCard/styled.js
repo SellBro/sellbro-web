@@ -50,3 +50,14 @@ export const DescriptionText = styled.p`
   line-height: 20px;
   opacity: 0.8;
 `;
+
+export const SocialContainer = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-left: -5px;
+  margin-top: 5px;
+`;
