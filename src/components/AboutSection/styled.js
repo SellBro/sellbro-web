@@ -59,7 +59,8 @@ export const AboutImageContainer = styled.div`
   flex-basis: 50%;
   z-index: 1;
 
-  img {
+  > img {
+    margin: auto;
     width: 60%;
     pointer-events: none;
   }
