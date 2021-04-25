@@ -9,25 +9,28 @@ export const team = {
   heading1: 'Leadership',
   mates: [
     {
-      name: 'Surzhenko Viacheslav',
+      firstname: 'Viacheslav',
+      lastname: 'Surzhenko',
       rank: 'Founder & CEO',
       image: assets.slavaImg,
       description:
         'SellBro CEO and Founder. The last one from "Original 3". Currently is a game developer and responsible for studio\'s Game Department.',
     },
     {
-      name: 'Max Kuchynskyj',
+      firstname: 'Max',
+      lastname: 'Kuchynskyj',
       rank: 'Fullstack developer',
       image: assets.maxImg,
       description:
         'A young and perspective member of SellBro Studio. Our Fullstack star and a React lover. Head of Web Department.',
     },
     {
-      name: 'Valentine Balaban',
+      firstname: 'Valentine',
+      lastname: 'Balaban',
       rank: 'Creative director',
       image: assets.asarImg,
       description:
-        'Valentine is a capable but a bit lazy creative director partially responsible for studio\'s logo and current studio\'s state.',
+        "Valentine is a capable but a bit lazy creative director partially responsible for studio's logo and current studio's state.",
     },
   ],
 };

@@ -30,8 +30,12 @@ export const DescriptionContainer = styled.div`
   flex-direction: column;
 `;
 
-export const DescriptionTitle = styled.h3`
+export const DescriptionFirstName = styled.h3`
   margin-top: 15px;
+  font-size: 32px;
+`;
+
+export const DescriptionLastName = styled.h3`
   font-size: 32px;
 `;
 

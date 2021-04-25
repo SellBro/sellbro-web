@@ -10,7 +10,8 @@ const TeamMateCard = ({ ...item }) => {
         <S.Image alt={item.name} src={item.image} />
       </S.ImageContainer>
       <S.DescriptionContainer>
-        <S.DescriptionTitle>{item.name}</S.DescriptionTitle>
+        <S.DescriptionFirstName>{item.firstname}</S.DescriptionFirstName>
+        <S.DescriptionLastName>{item.lastname}</S.DescriptionLastName>
         <S.DescriptionRank>{item.rank}</S.DescriptionRank>
         <S.DescriptionText>{item.description}</S.DescriptionText>
       </S.DescriptionContainer>
@@ -19,7 +20,8 @@ const TeamMateCard = ({ ...item }) => {
 };
 
 TeamMateCard.propTypes = {
-  name: PropTypes.string.isRequired,
+  firstname: PropTypes.string.isRequired,
+  lastname: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   rank: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
