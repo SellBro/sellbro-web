@@ -5,8 +5,10 @@ import layer2Img from 'images/layer2.png';
 import layer3Img from 'images/layer3.png';
 import sellbroIconImg from 'images/sellbro-icon.png';
 import titleImg from 'images/title.png';
+
 import userImg from 'images/user.png';
 import githubImg from 'images/github-icon.png';
+import linkedinImg from 'images/linkedin-icon.png';
 import joyStickImg from 'images/joystick.png';
 
 import slavaImg from 'images/slava.png';
@@ -33,6 +35,7 @@ export const assets = {
   layer2Img,
   layer3Img,
   githubImg,
+  linkedinImg,
   joyStickImg,
   sellbroIconImg,
   titleImg,

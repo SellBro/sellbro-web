@@ -7,7 +7,9 @@ export const LinkContainer = styled.a`
   img {
     width: 40px;
     height: 40px;
-    margin: 10px;
+    padding: 8px;
+    margin: 5px;
     cursor: pointer;
+    border: 1px solid rgb(54, 54, 73);
   }
 `;
