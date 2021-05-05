@@ -11,5 +11,11 @@ export const LinkContainer = styled.a`
     margin: 5px;
     cursor: pointer;
     border: 1px solid rgb(54, 54, 73);
+
+    :hover {
+      filter: invert(100%);
+      background-color: black;
+      transition: 0.3s;
+    }
   }
 `;
