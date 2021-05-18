@@ -8,6 +8,10 @@ export const ContactsInfoRoot = styled.div`
   flex-flow: column wrap;
   -webkit-box-pack: start;
   justify-content: flex-start;
+
+  @media (max-width: 1071px) {
+    margin-top: 50px;
+  }
 `;
 
 export const InfoItemContainer = styled.div`

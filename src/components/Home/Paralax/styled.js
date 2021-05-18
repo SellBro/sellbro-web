@@ -58,7 +58,7 @@ export const Layer1 = styled.div`
   position: fixed;
   display: block;
   height: 1000px;
-  bottom: 100px;
+  top: -100px;
   width: 100%;
   min-width: 720px;
   background-position: center;
@@ -69,7 +69,7 @@ export const Layer2 = styled.div`
   position: fixed;
   display: block;
   height: 1100px;
-  bottom: 50px;
+  top: -150px;
   width: 100%;
   min-width: 720px;
   background-position: center;
@@ -90,13 +90,12 @@ export const Layer3 = styled.div`
 
 export const Background = styled.div`
   background-image: ${`url(${assets.backgroundImg})`};
-  display: block;
   background-position: center;
   width: 100%;
   min-width: 720px;
   height: 1000px;
   background-repeat: repeat-x;
-  bottom: 100px;
+  top: -100px;
   position: fixed;
 `;
 
